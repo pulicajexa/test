@@ -355,7 +355,7 @@ echo "2404:6800:4008:c06::be scholar.google.com
 node_exporter(){
     if [ ! -f "/root/node_exporter.sh" ]; then
         yellow "检查到root文件夹下没有node_exporter配置文件，开始下载"
-        wget -O "/root/node_exporter.sh" "https://tools.zfxin.xyz/main/node_exporter.sh" --no-check-certificate -T 30 -t 5 -d
+        wget -O "/root/node_exporter.sh" "https://???/main/node_exporter.sh" --no-check-certificate -T 30 -t 5 -d
         chmod +x "/root/node_exporter.sh"
         green "node_exporter配置文件下载完成"
     fi
