@@ -5,7 +5,7 @@ if ! sudo -l >/dev/null; then
     echo "当前用户没有足够的权限执行 sudo 命令。"
     exit 1
 fi
-
+sudo apt install passwd -y
 # 输入并确认密码
 read -r -s -p "请输入要设置的root密码: " passwdroot
 echo  # 输出一个换行
