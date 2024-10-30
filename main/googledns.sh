@@ -352,16 +352,6 @@ echo "2404:6800:4008:c06::be scholar.google.com
 2404:6800:4008:803::2001 scholar.googleusercontent.com" >> /etc/hosts
 }
 
-node_exporter(){
-    if [ ! -f "/root/node_exporter.sh" ]; then
-        yellow "检查到root文件夹下没有node_exporter配置文件，开始下载"
-        wget -O "/root/node_exporter.sh" "https://???/main/node_exporter.sh" --no-check-certificate -T 30 -t 5 -d
-        chmod +x "/root/node_exporter.sh"
-        green "node_exporter配置文件下载完成"
-    fi
-    bash "/root/node_exporter.sh"
-}
-
 host_nameset(){
     read -p "请输入要设置的主机名：" name_host
     hostnamectl set-hostname $name_host
@@ -380,8 +370,7 @@ main_menu() {
     green " 1.debian11"
     green " 2.debian12"
     green " 3.谷歌学术ipv6地址"
-    green " 4.添加Nodes监控端"
-    green " 5.修改主机名"
+    green " 4.修改主机名"
     green " 0.退出脚本"
     read -r -p "请输入数字:" num
     case "$num" in
@@ -395,9 +384,6 @@ main_menu() {
         googlev6
         ;;
     4)
-        node_exporter
-        ;;
-    5)
         host_nameset
         ;;
     0)
