@@ -74,6 +74,9 @@ check_docker(){
         echo "docker存在，执行安装new-api...."
     fi
 }
+update_newpai(){
+    docker run --rm -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower -cR
+}
 #执行安装new-api
 new_api(){
     mkdir -p /home/data/new-api
@@ -92,6 +95,7 @@ main_menu() {
     green " 3.安装NY-HK2C"
     green " 4.安装NY-HK4C"
     green " 5.安装new-api"
+    green " 6.更新new-api版本"
     green " 0.退出脚本"
     read -r -p "请输入数字:" num
     case "$num" in
@@ -110,6 +114,9 @@ main_menu() {
     5)
         check_docker
         new_api
+        ;;
+    6)
+        update_newpai
         ;;
     0)
         exit 1
