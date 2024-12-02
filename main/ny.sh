@@ -84,6 +84,11 @@ new_api(){
     chmod 777 /home/data
     docker run --name new-api -d --restart always -p 3000:3000 -e TZ=Asia/Shanghai -v /home/data/new-api:/data calciumion/new-api:latest
 }
+
+#添加aws的ipv6地址
+add_ipv6(){
+    bash <(curl -s https://raw.githubusercontent.com/pulicajexa/test/refs/heads/main/main/aws/ip6.sh)
+    }
 # 主菜单
 main_menu() {
     green "====================================="
@@ -96,6 +101,7 @@ main_menu() {
     green " 4.安装NY-HK4C"
     green " 5.安装new-api"
     green " 6.更新new-api版本"
+    green " 7.添加ipv6(仅限aws可用)"
     green " 0.退出脚本"
     read -r -p "请输入数字:" num
     case "$num" in
@@ -117,6 +123,9 @@ main_menu() {
         ;;
     6)
         update_newpai
+        ;;
+    7)
+        add_ipv6
         ;;
     0)
         exit 1
