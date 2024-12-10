@@ -39,21 +39,21 @@ check_system() {
 
 #NY-SG
 ny_SG(){
-  bash <(curl -fLSs https://api.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-o -t 26f7e5b2-48dc-41aa-988d-29aa12017d18 -u https://ny.plu.lol"
+  bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-o -t 26f7e5b2-48dc-41aa-988d-29aa12017d18 -u https://ny.plu.lol"
 }
 
 #NY-JP
 NY_JP(){
-  bash <(curl -fLSs https://api.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-o -t 0143f3c2-6976-4bcd-97a1-7ce161a63d1c -u https://ny.plu.lol"
+  bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-o -t 0143f3c2-6976-4bcd-97a1-7ce161a63d1c -u https://ny.plu.lol"
 }
 
 #NY-HK-2C
 NY_HK2C(){
-  bash <(curl -fLSs https://api.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-o -t ce683d7b-c764-4904-b7f4-d24364f20b11 -u https://ny.plu.lol"
+  bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-o -t ce683d7b-c764-4904-b7f4-d24364f20b11 -u https://ny.plu.lol"
 }
 #NY-HK-4C
 NY_HK4C(){
-  bash <(curl -fLSs https://api.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-o -t 97025562-d197-4a07-b669-28224aa39b25 -u https://ny.plu.lol"
+  bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-o -t 97025562-d197-4a07-b669-28224aa39b25 -u https://ny.plu.lol"
 }
 #检查docker是否安装
 check_docker(){
