@@ -55,6 +55,10 @@ NY_HK2C(){
 NY_HK4C(){
   bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-o -t 97025562-d197-4a07-b669-28224aa39b25 -u https://ny.plu.lol"
 }
+#NY-C5n.xlarge
+NY_C5n(){
+  bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-o -t 734909b2-7dfe-4765-8b9e-07bf054d068a -u https://ny.plu.lol"
+}
 #检查docker是否安装
 check_docker(){
     if ! command -v docker &> /dev/null; then
@@ -99,7 +103,7 @@ main_menu() {
     green " 2.安装NY-JP"
     green " 3.安装NY-HK2C"
     green " 4.安装NY-HK4C"
-    green " 5.安装new-api"
+    green " 5.安装NY-C5n.xlarge"
     green " 6.更新new-api版本"
     green " 7.添加ipv6(仅限aws可用)"
     green " 0.退出脚本"
@@ -118,8 +122,7 @@ main_menu() {
         NY_HK4C
         ;;
     5)
-        check_docker
-        new_api
+        NY_C5n
         ;;
     6)
         update_newpai
