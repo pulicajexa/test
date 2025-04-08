@@ -49,7 +49,7 @@ NY_JP(){
 
 #NY-HK-2C
 NY_HK2C(){
-  bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-o -t ce683d7b-c764-4904-b7f4-d24364f20b11 -u https://ny.plu.lol"
+  bash <(curl -fLSs https://raw.githubusercontent.com/pulicajexa/test/refs/heads/main/main/nyanpass-install.sh) rel_nodeclient "-o -t ce683d7b-c764-4904-b7f4-d24364f20b11 -u https://ny.plu.lol"
 }
 #NY-HK-4C
 NY_HK4C(){
