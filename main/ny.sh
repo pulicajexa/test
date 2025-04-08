@@ -39,12 +39,12 @@ check_system() {
 
 #NY-SG
 ny_SG(){
-  bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-o -t 26f7e5b2-48dc-41aa-988d-29aa12017d18 -u https://ny.plu.lol"
+  bash <(curl -fLSs https://raw.githubusercontent.com/pulicajexa/test/refs/heads/main/main/nyanpass-install.sh) rel_nodeclient "-o -t 26f7e5b2-48dc-41aa-988d-29aa12017d18 -u https://ny.plu.lol"
 }
 
 #NY-JP
 NY_JP(){
-  bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-o -t 0143f3c2-6976-4bcd-97a1-7ce161a63d1c -u https://ny.plu.lol"
+  bash <(curl -fLSs https://raw.githubusercontent.com/pulicajexa/test/refs/heads/main/main/nyanpass-install.sh) rel_nodeclient "-o -t 0143f3c2-6976-4bcd-97a1-7ce161a63d1c -u https://ny.plu.lol"
 }
 
 #NY-HK-2C
@@ -53,11 +53,11 @@ NY_HK2C(){
 }
 #NY-HK-4C
 NY_HK4C(){
-  bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-o -t 97025562-d197-4a07-b669-28224aa39b25 -u https://ny.plu.lol"
+  bash <(curl -fLSs https://raw.githubusercontent.com/pulicajexa/test/refs/heads/main/main/nyanpass-install.sh) rel_nodeclient "-o -t 97025562-d197-4a07-b669-28224aa39b25 -u https://ny.plu.lol"
 }
 #NY-C5n.xlarge
 NY_C5n(){
-  bash <(curl -fLSs https://dl.nyafw.com/download/nyanpass-install.sh) rel_nodeclient "-o -t 734909b2-7dfe-4765-8b9e-07bf054d068a -u https://ny.plu.lol"
+  bash <(curl -fLSs https://raw.githubusercontent.com/pulicajexa/test/refs/heads/main/main/nyanpass-install.sh) rel_nodeclient "-o -t 734909b2-7dfe-4765-8b9e-07bf054d068a -u https://ny.plu.lol"
 }
 #检查docker是否安装
 check_docker(){
