@@ -116,9 +116,8 @@ info "如需卸载，请运行以下命令："
 echo "systemctl disable --now ${service_name} ; rm -rf /opt/${service_name} ; rm -f /etc/systemd/system/${service_name}.service"
 
 UNINSTALL_FILE="/opt/${service_name}.uninstall.sh"
-echo_uninstall_to_file "$service_name" "$UNINSTALL_FILE"
-info "或者："
-echo "bash $UNINSTALL_FILE"
+echo "systemctl disable --now ${service_name} ; rm -rf /opt/${service_name} ; rm -f /etc/systemd/system/${service_name}.service" >"$UNINSTALL_FILE"
+info "或者运行：bash $UNINSTALL_FILE"
 
 #### 检查 bbr
 
