@@ -59,6 +59,11 @@ NY_HK4C(){
 NY_C5n(){
   bash <(curl -fLSs https://raw.githubusercontent.com/pulicajexa/test/refs/heads/main/main/nyanpass-install.sh) rel_nodeclient "-o -t 734909b2-7dfe-4765-8b9e-07bf054d068a -u https://ny.plu.lol"
 }
+
+#NY-USA
+NY_USA(){
+  bash <(curl -fLSs https://raw.githubusercontent.com/pulicajexa/test/refs/heads/main/main/nyanpass-install.sh) rel_nodeclient "-o -t 12dd0dd5-8ced-4de5-9db8-1f88e595b796 -u https://ny.plu.lol"
+}
 #检查docker是否安装
 check_docker(){
     if ! command -v docker &> /dev/null; then
@@ -104,7 +109,7 @@ main_menu() {
     green " 3.安装NY-HK2C"
     green " 4.安装NY-HK4C"
     green " 5.安装NY-C5n.xlarge"
-    green " 6.更新new-api版本"
+    green " 6.安装NY-USA"
     green " 7.添加ipv6(仅限aws可用)"
     green " 0.退出脚本"
     read -r -p "请输入数字:" num
@@ -125,7 +130,7 @@ main_menu() {
         NY_C5n
         ;;
     6)
-        update_newpai
+        NY_USA
         ;;
     7)
         add_ipv6
